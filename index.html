@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Worktopx</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "IRANSans", "Tahoma", sans-serif;
+      background: linear-gradient(135deg, #fdfbfb, #ebedee);
+      color: #333;
+    }
+    nav {
+      background: rgba(255,255,255,0.8);
+      backdrop-filter: blur(12px);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      border-radius: 0 0 20px 20px;
+    }
+    nav .logo {
+      font-weight: bold;
+      font-size: 24px;
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #6a11cb;
+    }
+    nav .signup-btn {
+      background: linear-gradient(135deg, #43cea2, #185a9d);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+    nav .signup-btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #11998e, #38ef7d);
+    }
+    header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      border-radius: 0 0 40px 40px;
+    }
+    header h1 {
+      font-size: 46px;
+      margin-bottom: 20px;
+      animation: fadeInDown 1s ease;
+    }
+    header p {
+      font-size: 20px;
+      margin-bottom: 40px;
+      opacity: 0.9;
+    }
+    .slogans {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+    }
+    .slogans div {
+      background: rgba(255,255,255,0.2);
+      padding: 20px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      font-size: 18px;
+      color: #fff;
+      transition: transform 0.3s ease;
+    }
+    .slogans div:hover {
+      transform: translateY(-5px);
+    }
+    .skills-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 60px;
+      text-align: center;
+    }
+    .skill-card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      padding: 25px;
+      transition: transform 0.3s ease;
+    }
+    .skill-card:hover {
+      transform: translateY(-10px);
+    }
+    .skill-card img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 15px;
+    }
+    .skill-card h3 {
+      margin-bottom: 10px;
+      color: #2575fc;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Worktopx</div>
+    <ul>
+      <li><a href="MOtakhsis.html">خدمات</a></li>
+      <li><a href="Callus.html">تماس با ما</a></li>
+      <li><a href="login.html" class="signup-btn">ورود / ثبت‌نام</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>به Worktopx خوش آمدید</h1>
+    <p>پلتفرم جامع برای اتصال متخصصان و مشتریان</p>
+    <div class="slogans">
+      <div>🌟 مهارت‌های خود را به دنیا نشان دهید</div>
+      <div>🚀 فرصت‌های کاری جدید را کشف کنید</div>
+      <div>💼 اعتماد و کیفیت در یک مکان</div>
+    </div>
+  </header>
+
+  <section class="skills-section">
+    <div class="skill-card">
+      <img src="https://via.placeholder.com/80" alt="طراحی وب">
+      <h3>طراحی وب</h3>
+      <p>ایجاد وب‌سایت‌های مدرن و واکنش‌گرا برای کسب‌وکار شما.</p>
+    </div>
+    <div class="skill-card">
+      <img src="https://via.placeholder.com/80" alt="برنامه‌نویسی">
+      <h3>برنامه‌نویسی</h3>
+      <p>توسعه نرم‌افزارهای حرفه‌ای و اپلیکیشن‌های موبایل.</p>
+    </div>
+    <div class="skill-card">
+      <img src="https://via.placeholder.com/80" alt="گرافیک">
+      <h3>گرافیک و طراحی</h3>
+      <p>طراحی لوگو، پوستر و هویت بصری جذاب برای برند شما.</p>
+    </div>
+    <div class="skill-card">
+      <img src="https://via.placeholder.com/80" alt="مشاوره">
+      <h3>مشاوره تخصصی</h3>
+      <p>ارائه راهکارهای حرفه‌ای در زمینه‌های مختلف کسب‌وکار.</p>
+    </div>
+  </section>
+
+</body>
+</html>
